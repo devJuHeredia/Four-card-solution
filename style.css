@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    color: hsl(234, 12%, 34%);
+}
+
+.container {
+    margin: 90px 30px;
+}
+
+/*header*/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 200;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+header h2 {
+    font-weight: 600;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.05em;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 70px;
+}
+
+/*box-container*/
+
+.box {
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 3px 10px 10px hsl(229, 6%, 66%);
+    margin-bottom: 30px;
+    min-width: 310px;
+    max-width: 500px;
+    height: 222px;
+    overflow: hidden;
+}
+
+.b1 .line {
+    background-color: hsl(180, 62%, 55%);
+    height: 4px;
+}
+.b2 .line {
+    background-color: hsl(0, 78%, 62%);
+    height: 4px;
+}
+.b3 .line {
+    background-color: hsl(34, 97%, 64%);
+    height: 4px;
+}
+.b4 .line {
+    background-color: hsl(212, 86%, 64%);
+    height: 4px;
+}
+
+.title {
+   padding: 30px 30px 0 30px;
+}
+p {
+    padding: 0 30px 30px 30px;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.89em;
+}
+
+.image {
+    text-align: right;
+}
+
+.img {
+    margin: 15px;
+}
+
+/*600px*/
+
+@media screen and (min-width: 600px){
+    header {
+        max-width: 525px;
+        margin: 0 auto;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    header h2{
+        font-size: 2.5em;
+    }
+}
+
+/*780px*/
+
+@media screen and (min-width: 780px){
+    .box-container {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        max-width: 900px;
+    }
+    .twoboxs {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+}
+
+/*1175px*/
+
+@media screen and (min-width: 1175px){
+    .box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+   
+    .box {
+        width: 355px;
+        height: 254px;
+    }
+}
